@@ -11,9 +11,9 @@ class Valera
 	end
 end
 
-class GoToWork
+class Actions
 
-	def change(valera)
+	def go_work(valera)
 		if valera.alcomana < 50 && valera.tired < 10
 			valera.happy -= 5
 			valera.alcomana -= 30
