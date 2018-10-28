@@ -54,5 +54,11 @@ class Actions
 		valera.tired += 10
 	end
 
-
+	def films_and_vines(valera)
+		valera.happy -= 1
+		valera.alcomana += 30
+		valera.money -= 20
+		valera.tired += 10
+		valera.health -= 5
+	end
 end

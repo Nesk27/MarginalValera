@@ -28,11 +28,21 @@ describe Actions do
 	it "should change value by films_and_vines" do
 		@valera = Valera.new
 		@actions.films_and_vines(@valera)
-		expect(@valera.happy).to eq 1
+		expect(@valera.happy).to eq -1
 		expect(@valera.alcomana).to eq 30
 		expect(@valera.money).to eq 280
 		expect(@valera.tired).to eq 10
 		expect(@valera.health).to eq 95
+	end
+
+	it "should change value by go_bar" do
+		@valera = Valera.new
+		@actions.go_bar(@valera)
+		expect(@valera.happy).to eq 1
+		expect(@valera.alcomana).to eq 60
+		expect(@valera.money).to eq 200
+		expect(@valera.tired).to eq 40
+		expect(@valera.health).to eq 90
 	end
 
 end
