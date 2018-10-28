@@ -10,3 +10,15 @@ class Valera
 		@money = 300
 	end
 end
+
+class GoToWork
+
+	def change(valera)
+		if valera.alcomana < 50 && valera.tired < 10
+			valera.happy -= 5
+			valera.alcomana -= 30
+			valera.money += 100
+			valera.tired += 70
+		end
+	end
+end
