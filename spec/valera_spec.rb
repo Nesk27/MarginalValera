@@ -8,19 +8,19 @@ describe Valera do
 		expect(@valera.health).to eq 100
 	end
 
-	it "should alcomana eq 0 on start"
+	it "should alcomana eq 0 on start" do
 		expect(@valera.alcomana).to eq 0
 	end
 
-	it "should happy eq 0 on start"
+	it "should happy eq 0 on start" do
 		expect(@valera.happy).to eq 0
 	end
 
-	it "should tired eq 0 on start"
+	it "should tired eq 0 on start" do
 		expect(@valera.tired).to eq 0
 	end
 
-	it "should money eq 300 on start"
+	it "should money eq 300 on start" do
 		expect(@valera.money).to eq 300
 	end
 
