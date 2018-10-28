@@ -61,4 +61,20 @@ class Actions
 		valera.tired += 10
 		valera.health -= 5
 	end
+
+	def films_and_vines(valera)
+		valera.happy -= 1
+		valera.alcomana += 30
+		valera.money -= 20
+		valera.tired += 10
+		valera.health -= 5
+	end
+
+  def go_bar(valera)
+    valera.happy += 1
+    valera.alcomana += 60
+    valera.money -= 100
+    valera.tired += 40
+    valera.health -= 10
+  end
 end
