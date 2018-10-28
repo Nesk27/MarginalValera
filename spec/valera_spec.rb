@@ -24,8 +24,6 @@ describe Valera do
 		expect(@valera.money).to eq 300
 	end
 
-
-
 end
 
 

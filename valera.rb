@@ -48,5 +48,11 @@ class Actions
 		end
 	end
 
-	
+	def view_nature(valera)
+		valera.happy += 1
+		valera.alcomana -= 10
+		valera.tired += 10
+	end
+
+
 end
