@@ -14,4 +14,12 @@ describe Actions do
 
 	end
 
+	it "should change value by view_nature" do
+		@valera = Valera.new
+		@actions.view_nature(@valera)
+		expect(@valera.happy).to eq 1
+		expect(@valera.alcomana).to eq 0
+		expect(@valera.money).to eq 300
+		expect(@valera.tired).to eq 10
+	end
 end

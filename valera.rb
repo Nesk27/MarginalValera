@@ -47,4 +47,6 @@ class Actions
 			valera.tired += 70
 		end
 	end
+
+	
 end
