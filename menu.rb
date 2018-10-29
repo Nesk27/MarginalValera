@@ -9,13 +9,19 @@ class Menu
 		puts "Деньги: #{valera.money}$\n\n"	
 	end	
 
+	def load_config
+		@file = open 'config.json'
+		@hash = JSON.parse(@file.read)
+	end
+
+  
 	def print_actions
-		puts "1 - Пойти на работу"
-		puts "2 - Созерцать природу"
-		puts "3 - Пить вино и смотреть сериал"
-		puts "4 - Сходить в бар"
-		puts "5 - Выпить с маргинальными личностями"
-		puts "6 - Петь в метро"
-		puts "7 - Спать"
+		load_config
+    counter = 1
+    @hash['actions'].each do |action|
+      puts "#{counter.to_s} - #{action['name']}"
+      counter += 1
+    end
 	end
 end
+
