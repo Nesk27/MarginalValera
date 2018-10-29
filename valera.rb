@@ -77,4 +77,12 @@ class Actions
     valera.tired += 40
     valera.health -= 10
   end
+
+  def drinking(valera)
+    valera.happy += 5
+    valera.health -= 80
+    valera.alcomana += 90
+    valera.tired += 80
+    valera.money -= 150
+  end
 end

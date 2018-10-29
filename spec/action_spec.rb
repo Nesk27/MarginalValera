@@ -51,7 +51,7 @@ describe Actions do
 		expect(@valera.happy).to eq 5
 		expect(@valera.health).to eq 20
 		expect(@valera.alcomana).to eq 90
-		expect(@valera.tired).to eq 90
+		expect(@valera.tired).to eq 80
 		expect(@valera.money).to eq 150
 	end
 
