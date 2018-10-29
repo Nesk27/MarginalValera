@@ -94,4 +94,11 @@ class Actions
     valera.tired += 20
   end
 
+  def sleeping(valera)
+    valera.health += 90 if valera.alcomana < 30
+    valera.happy -= 3 if valera.alcomana > 70
+    valera.alcomana -= 50
+    valera.tired -= 70
+  end
+
 end

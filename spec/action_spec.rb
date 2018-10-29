@@ -72,15 +72,18 @@ describe Actions do
 		@valera = Valera.new
 		@actions.sleeping(@valera)
 		expect(@valera.happy).to eq 0
-		expect(@valera.health).to eq 90
+		expect(@valera.health).to eq 100
 		expect(@valera.alcomana).to eq 0
 		expect(@valera.tired).to eq 0
 		expect(@valera.money).to eq 300
 		@valera.alcomana = 71
 		@valera.happy = 5
 		@actions.sleeping(@valera)
-		expect(@valera.health).to eq 90
 		expect(@valera.happy).to eq 2
+		@valera.alcomana = 29
+		@valera.health = 0
+		@actions.sleeping(@valera)
+		expect(@valera.health).to eq 90
 	end
 
 end
