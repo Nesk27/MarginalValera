@@ -19,8 +19,3 @@ class Menu
 		puts "7 - Спать"
 	end
 end
-
-menu = Menu.new
-valera = Valera.new
-menu.print_stats(valera)
-menu.print_actions
