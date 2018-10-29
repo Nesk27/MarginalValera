@@ -28,12 +28,12 @@ class Valera
 		@tired = 100 if value > 100
 	end
 
-	def initialize
-		@health = 100
-		@alcomana = 0
-		@happy = 0
-		@tired = 0
-		@money = 300
+	def initialize (health = 100, alcomana = 0, happy = 0, tired = 0, money = 300)
+		@health = health
+		@alcomana = alcomana
+		@happy = happy
+		@tired = tired
+		@money = money
 	end
 
   def dead?

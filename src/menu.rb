@@ -1,4 +1,5 @@
 require_relative './valera.rb'
+require "json"
 
 class Menu
 
@@ -10,18 +11,24 @@ class Menu
 	end	
 
 	def load_config
-		@file = open 'config.json'
+		@file = open "./config.json"
 		@hash = JSON.parse(@file.read)
 	end
 
+  def start_menu
+    puts "--------! Marginal Valera Game !--------\n\n\n"
+    puts "1 - New Game"
+    puts "2 - Load Game"
+    puts "3 - Exit"
+  end
   
 	def print_actions
 		load_config
-    counter = 1
-    @hash['actions'].each do |action|
-      puts "#{counter.to_s} - #{action['name']}"
-      counter += 1
-    end
+	    counter = 1
+	    @hash['actions'].each do |action|
+	      puts "#{counter.to_s} - #{action['name']}"
+	      counter += 1
+	    end
 	end
 end
 
