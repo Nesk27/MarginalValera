@@ -8,6 +8,8 @@ class Actions
 			valera.alcomana -= 30
 			valera.money += 100
 			valera.tired += 70
+		else
+			puts "Валера устал и пьян, не может работать :c"
 		end
 	end
 
