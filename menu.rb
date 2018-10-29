@@ -1,4 +1,4 @@
-require_relative './actions.rb'
+require_relative './valera.rb'
 
 class Menu
 
