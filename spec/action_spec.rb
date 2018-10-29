@@ -64,7 +64,7 @@ describe Actions do
 		expect(@valera.tired).to eq 20
 		expect(@valera.money).to eq 310
 		@valera.alcomana = 50
-		@actions.sing(@valera
+		@actions.sing(@valera)
 		expect(@valera.money).to eq 370
 	end
 

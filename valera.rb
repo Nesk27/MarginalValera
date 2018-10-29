@@ -85,4 +85,13 @@ class Actions
     valera.tired += 80
     valera.money -= 150
   end
+
+  def sing(valera)
+    valera.happy += 1
+    valera.money += 10
+    valera.money += 50 if valera.alcomana > 40 && valera.alcomana < 70
+    valera.alcomana += 10
+    valera.tired += 20
+  end
+
 end
