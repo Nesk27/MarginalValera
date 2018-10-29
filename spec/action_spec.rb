@@ -68,4 +68,19 @@ describe Actions do
 		expect(@valera.money).to eq 370
 	end
 
+	it "should change value by sleeping" do
+		@valera = Valera.new
+		@actions.sleeping(@valera)
+		expect(@valera.happy).to eq 0
+		expect(@valera.health).to eq 90
+		expect(@valera.alcomana).to eq 0
+		expect(@valera.tired).to eq 0
+		expect(@valera.money).to eq 300
+		@valera.alcomana = 71
+		@valera.happy = 5
+		@actions.sleeping(@valera)
+		expect(@valera.health).to eq 90
+		expect(@valera.happy).to eq 2
+	end
+
 end
