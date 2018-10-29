@@ -45,4 +45,14 @@ describe Actions do
 		expect(@valera.health).to eq 90
 	end
 
+	it "should change value by drinking" do
+		@valera = Valera.new
+		@actions.drinking(@valera)
+		expect(@valera.happy).to eq 5
+		expect(@valera.health).to eq 20
+		expect(@valera.alcomana).to eq 90
+		expect(@valera.tired).to eq 90
+		expect(@valera.money).to eq 150
+	end
+
 end
