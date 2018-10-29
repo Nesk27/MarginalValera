@@ -35,6 +35,14 @@ class Valera
 		@tired = 0
 		@money = 300
 	end
+
+  def dead?
+    if @health == 0 || @happy == -10 || @money == -1000
+      return true
+    end
+    return false
+  end
+
 end
 
 class Actions
