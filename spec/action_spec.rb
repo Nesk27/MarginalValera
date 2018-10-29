@@ -55,4 +55,17 @@ describe Actions do
 		expect(@valera.money).to eq 150
 	end
 
+	it "should change value by sing" do
+		@valera = Valera.new
+		@actions.sing(@valera)
+		expect(@valera.happy).to eq 1
+		expect(@valera.health).to eq 100
+		expect(@valera.alcomana).to eq 10
+		expect(@valera.tired).to eq 20
+		expect(@valera.money).to eq 310
+		@valera.alcomana = 50
+		@actions.sing(@valera
+		expect(@valera.money).to eq 370
+	end
+
 end
