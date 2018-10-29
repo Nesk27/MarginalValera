@@ -1,5 +1,5 @@
 require 'rspec'
-require_relative '../valera.rb'
+require_relative '../actions.rb'
 
 describe Actions do 
 	before {@actions = Actions.new}
